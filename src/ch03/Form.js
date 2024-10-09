@@ -9,8 +9,8 @@ const Form = () => {
       <Button></Button>
       <Button></Button>
       <div>
-      <Button1 action="envoyer"/>
-      <Button1 action="annuler"/>
+        <Button1 action="envoyer" />
+        <Button1 action="annuler" />
       </div>
     </>
   );
