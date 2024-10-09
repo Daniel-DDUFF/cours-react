@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button1 = (props) => {
+const Button1 = ({action}) => {
   return (
-    <button>{props.action}</button>
+    <button>{action}</button>
   )
 }
 
