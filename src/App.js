@@ -8,6 +8,7 @@ import Title3 from "./ch03/Title3";
 import Profile from "./ch03/Profile";
 import List, { Child } from "./ch03/List";
 import { Book2 } from "./ch03/Book2";
+import Counter from "./ch04/Counter";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Book2 isNew={false}>
         <Title3 title="React.js" author="Abbes" />
       </Book2>
+      <Counter />
     </>
   );
 }
