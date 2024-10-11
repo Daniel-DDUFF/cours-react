@@ -7,6 +7,7 @@ import Book1 from "./ch03/Book1";
 import Title3 from "./ch03/Title3";
 import Profile from "./ch03/Profile";
 import List, { Child } from "./ch03/List";
+import { Book2 } from "./ch03/Book2";
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
         <Child text="Item 4" />
       </List>
       <span>Item 5</span>
+
+      <Book2 isNew={false}>
+        <Title3 title="React.js" author="Abbes" />
+      </Book2>
     </>
   );
 }
