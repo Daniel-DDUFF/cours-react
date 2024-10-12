@@ -9,6 +9,8 @@ import Profile from "./ch03/Profile";
 import List, { Child } from "./ch03/List";
 import { Book2 } from "./ch03/Book2";
 import Counter from "./ch04/Counter";
+import PageCounter from "./ch04/PageCounter";
+import ToggleLight from "./ch04/ToggleLight";
 
 function App() {
   return (
@@ -33,6 +35,9 @@ function App() {
         <Title3 title="React.js" author="Abbes" />
       </Book2>
       <Counter />
+
+      <PageCounter />
+      <ToggleLight />
     </>
   );
 }
