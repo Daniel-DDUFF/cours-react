@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Counter = () => {
-  const [click, setClick] = useState(0);
+  const [click, setClick] = useState(10);
   console.log(`Counter render`);
+  useEffect(() => {
+    document.title = `Nombre de clics : ${click}`;
+  });
 
   return (
     <>

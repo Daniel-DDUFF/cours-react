@@ -3,10 +3,14 @@ import React, { useState } from "react";
 const ToggleLight = () => {
   const [isOn, setIsOn] = useState(false);
 
+  const messageStyle = {
+    color: isOn ? "green" : "red",
+  };
+
   return (
     <>
-      <div>The light is {isOn ? " on" : " off"}</div>
-      <button onClick={() => setIsOn(!isOn)}>Switch</button>
+      <div style={messageStyle}>The light is {isOn ? " on" : " off"}</div>
+      <button onClick={() => setIsOn(!isOn)}>{isOn ? "off" : "on"}</button>
     </>
   );
 };
