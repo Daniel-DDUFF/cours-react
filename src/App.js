@@ -12,6 +12,7 @@ import Counter from "./ch04/Counter";
 import PageCounter from "./ch04/PageCounter";
 import ToggleLight from "./ch04/ToggleLight";
 import CallApi from "./ch04/CallApi";
+import DataFetcher from "./ch04/DataFetcher";
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
 
       <PageCounter />
       <ToggleLight />
-      <CallApi />
+      <DataFetcher />
     </>
   );
 }
