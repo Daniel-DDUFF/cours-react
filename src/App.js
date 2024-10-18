@@ -15,6 +15,8 @@ import DataFetcher from "./ch04/DataFetcher";
 import UserProvider from "./ch04/UserProvider";
 import UserInfo from "./ch04/UserInfo";
 import UserControls from "./ch04/UserControls";
+import ThemeProvider from "./ch04/ThemeProvider";
+import ThemedButton from "./ch04/ThemedButton";
 
 function App() {
   return (
@@ -52,6 +54,9 @@ function App() {
           <UserControls />
         </div>
       </UserProvider>
+      <ThemeProvider>
+        <ThemedButton />
+      </ThemeProvider>
     </>
   );
 }
