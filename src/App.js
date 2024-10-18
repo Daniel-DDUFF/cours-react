@@ -11,8 +11,10 @@ import { Book2 } from "./ch03/Book2";
 import Counter from "./ch04/Counter";
 import PageCounter from "./ch04/PageCounter";
 import ToggleLight from "./ch04/ToggleLight";
-import CallApi from "./ch04/CallApi";
 import DataFetcher from "./ch04/DataFetcher";
+import UserProvider from "./ch04/UserProvider";
+import UserInfo from "./ch04/UserInfo";
+import UserControls from "./ch04/UserControls";
 
 function App() {
   return (
@@ -41,6 +43,15 @@ function App() {
       <PageCounter />
       <ToggleLight />
       <DataFetcher />
+
+      {/* useContext exemple */}
+      <UserProvider>
+        <div>
+          <h1>User Authentication Example</h1>
+          <UserInfo />
+          <UserControls />
+        </div>
+      </UserProvider>
     </>
   );
 }
