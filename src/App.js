@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Title from "./ch03/Title";
 import Form from "./ch03/Form";
@@ -17,6 +16,19 @@ import UserInfo from "./ch04/UserInfo";
 import UserControls from "./ch04/UserControls";
 import ThemeProvider from "./ch04/ThemeProvider";
 import ThemedButton from "./ch04/ThemedButton";
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "./ch05/Home";
+import About from "./ch05/About";
+
+const users = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Jane" },
+  { id: 3, name: "Alice" },
+  { id: 4, name: "Bob" },
+  { id: 5, name: "Abbes" },
+  { id: 6, name: "Aron" },
+  { id: 7, name: "Abram" },
+];
 
 function App() {
   return (
@@ -57,6 +69,28 @@ function App() {
       <ThemeProvider>
         <ThemedButton />
       </ThemeProvider>
+
+
+      {/* use of react router dom */}
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+            </ul>
+          </nav>
+          <hr />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+      </Router>
     </>
   );
 }
