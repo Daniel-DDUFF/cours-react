@@ -19,6 +19,7 @@ import ThemedButton from "./ch04/ThemedButton";
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./ch05/Home";
 import About from "./ch05/About";
+import Pagination from "./ch05/Pagination";
 
 const users = [
   { id: 1, name: "John" },
@@ -70,7 +71,6 @@ function App() {
         <ThemedButton />
       </ThemeProvider>
 
-
       {/* use of react router dom */}
       <Router>
         <div>
@@ -91,6 +91,9 @@ function App() {
           </Routes>
         </div>
       </Router>
+
+      {/* Pagination */} 
+      <Pagination />
     </>
   );
 }
